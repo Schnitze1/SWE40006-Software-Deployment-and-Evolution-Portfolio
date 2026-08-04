@@ -6,7 +6,7 @@
       "AbsoluteMoniker": "D:0:0:{532BF5A9-5E00-487F-AB5F-71538937CF3E}|..\\SampleAppSetup\\SampleAppSetup.wixproj|D:\\Repos\\SWE40006-Software Deployment and Evolution\\SampleAppSetup\\Product.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFB09710-A15E-433E-A20C-F7D8B9850F2D}|SampleApp.csproj|d:\\repos\\swe40006-software deployment and evolution\\sampleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFB09710-A15E-433E-A20C-F7D8B9850F2D}|SampleApp.csproj|D:\\Repos\\SWE40006-Software Deployment and Evolution\\SampleApp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFB09710-A15E-433E-A20C-F7D8B9850F2D}|SampleApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,7 +27,7 @@
               "RelativeDocumentMoniker": "..\\SampleAppSetup\\Product.wxs",
               "ToolTip": "D:\\Repos\\SWE40006-Software Deployment and Evolution\\SampleAppSetup\\Product.wxs",
               "RelativeToolTip": "..\\SampleAppSetup\\Product.wxs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-08-04T00:14:28.101Z",
               "EditorCaption": ""
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T00:08:16.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-04T00:08:16.054Z"
             }
           ]
         }
