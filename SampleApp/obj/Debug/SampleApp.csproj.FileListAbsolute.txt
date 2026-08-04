@@ -1,0 +1,7 @@
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleApp\bin\Debug\SampleApp.exe.config
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleApp\bin\Debug\SampleApp.exe
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleApp\bin\Debug\SampleApp.pdb
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleApp\obj\Debug\SampleApp.csproj.AssemblyReference.cache
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleApp\obj\Debug\SampleApp.csproj.CoreCompileInputs.cache
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleApp\obj\Debug\SampleApp.exe
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleApp\obj\Debug\SampleApp.pdb
