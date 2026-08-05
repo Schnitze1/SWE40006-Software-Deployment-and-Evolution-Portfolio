@@ -1,0 +1,2 @@
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleAppSetup\bin\Debug\SampleAppSetup.msi
+D:\Repos\SWE40006-Software Deployment and Evolution\SampleAppSetup\bin\Debug\SampleAppSetup.wixpdb
