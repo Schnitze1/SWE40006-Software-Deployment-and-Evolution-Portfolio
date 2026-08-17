@@ -1,0 +1,25 @@
+# created using wingetcreate
+
+PackageIdentifier: Swinburne.SampleApp
+PackageVersion: 1.0.0.0
+PackageLocale: en-US
+Publisher: SwinburneStudent
+PublisherUrl: https://github.com/Schnitze1
+PublisherSupportUrl: https://github.com/Schnitze1/SWE40006-Software-Deployment-and-Evolution-Portfolio/issues
+Author: SwinburneStudent
+PackageName: SampleApp Setup
+PackageUrl: https://github.com/Schnitze1/SWE40006-Software-Deployment-and-Evolution-Portfolio
+License: MIT
+LicenseUrl: https://github.com/Schnitze1/SWE40006-Software-Deployment-and-Evolution-Portfolio/blob/main/LICENSE
+Copyright: Copyright (c) Swinburne Student
+ShortDescription: Sample Desktop Application for Deployment Activity with Newtonsoft.Json and Serilog dependencies.
+Description: Sample Application compiled with WiX v3 toolset featuring external assembly resolution (Newtonsoft.Json and Serilog).
+Tags:
+  - winforms
+  - wix
+  - deployment
+  - swinburne
+  - serilog
+  - newtonsoft
+ManifestType: locale
+ManifestVersion: 1.6.0

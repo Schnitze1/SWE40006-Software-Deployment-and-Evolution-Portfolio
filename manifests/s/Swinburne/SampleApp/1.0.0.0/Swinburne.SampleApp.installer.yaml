@@ -1,0 +1,19 @@
+# created using wingetcreate
+
+PackageIdentifier: Swinburne.SampleApp
+PackageVersion: 1.0.0.0
+MinimumOSVersion: 10.0.0.0
+InstallerType: msi
+Scope: machine
+InstallModes:
+  - interactive
+  - silent
+  - silentWithProgress
+UpgradeBehavior: install
+Installers:
+  - Architecture: x86
+    InstallerUrl: https://github.com/Schnitze1/SWE40006-Software-Deployment-and-Evolution-Portfolio/releases/download/v1.0.0/SampleAppSetup.msi
+    InstallerSha256: 6B34D440F7B410DE334EA16294251BF322E1FB57520526BE0B5CB141B3D81D22
+    ProductCode: '{D5AE62C5-C0FA-4593-A96C-949A576C757A}'
+ManifestType: installer
+ManifestVersion: 1.6.0
