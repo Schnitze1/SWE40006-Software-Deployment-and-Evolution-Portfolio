@@ -8,14 +8,57 @@
       <Directory Id="ProgramFilesFolder">
         <Directory Id="INSTALLFOLDER" Name="SampleApp" />
       </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="SampleApp" />
+      </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop" />
     </Directory>
+
     <DirectoryRef Id="INSTALLFOLDER">
       <Component Id="MainExecutable" Guid="{C252518D-157F-48FE-BCB1-06214517748F}">
         <File Id="SampleAppEXE" Source="$(var.SampleApp.TargetPath)" KeyPath="yes" />
       </Component>
+      <Component Id="NewtonsoftJsonDLL" Guid="{A1B2C3D4-E5F6-4701-8901-234567890ABC}">
+        <File Id="NewtonsoftJsonDLLFile" Source="$(var.SampleApp.TargetDir)Newtonsoft.Json.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="SerilogDLL" Guid="{B2C3D4E5-F6A7-4802-9012-345678901BCD}">
+        <File Id="SerilogDLLFile" Source="$(var.SampleApp.TargetDir)Serilog.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="SerilogSinksFileDLL" Guid="{C3D4E5F6-A7B8-4903-0123-456789012CDE}">
+        <File Id="SerilogSinksFileDLLFile" Source="$(var.SampleApp.TargetDir)Serilog.Sinks.File.dll" KeyPath="yes" />
+      </Component>
     </DirectoryRef>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="{E4D21B89-72D9-4B52-871B-94F3C88062B1}">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="Sample Application"
+                  Description="Sample Desktop Application for Deployment Activity"
+                  Target="[INSTALLFOLDER]SampleApp.exe"
+                  WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="CleanUpShortCut" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\Swinburne\SampleApp" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="DesktopShortcutComponent" Guid="{8F6E0B19-09A3-41E7-A54D-B27D0556C42A}">
+        <Shortcut Id="ApplicationDesktopShortcut"
+                  Name="Sample Application"
+                  Description="Sample Desktop Application for Deployment Activity"
+                  Target="[INSTALLFOLDER]SampleApp.exe"
+                  WorkingDirectory="INSTALLFOLDER" />
+        <RegistryValue Root="HKCU" Key="Software\Swinburne\SampleApp" Name="desktop_shortcut" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
     <Feature Id="ProductFeature" Title="SampleAppSetup" Level="1">
       <ComponentRef Id="MainExecutable" />
+      <ComponentRef Id="NewtonsoftJsonDLL" />
+      <ComponentRef Id="SerilogDLL" />
+      <ComponentRef Id="SerilogSinksFileDLL" />
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="DesktopShortcutComponent" />
     </Feature>
   </Product>
 </Wix>
